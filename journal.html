@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journals - Ethiopian Youth Physics Network</title>
+
+<style>
+:root{
+  --primary:#1b5e20;
+  --accent:#f9a825;
+  --bg:#f2f4f7;
+  --dark:#263238;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--dark);
+}
+
+/* HEADER */
+header{
+  background:var(--primary);
+  color:white;
+  padding:35px 20px;
+  text-align:center;
+}
+
+header h1{
+  font-size:32px;
+}
+
+header p{
+  margin-top:8px;
+  opacity:0.9;
+}
+
+/* NAV */
+nav{
+  background:#ffffff;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+  color:var(--primary);
+  text-decoration:none;
+  padding:16px 22px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+/* HERO */
+.hero{
+  padding:50px 20px;
+  text-align:center;
+  background:linear-gradient(to right,#e8f5e9,#fff);
+}
+
+.hero h2{
+  font-size:28px;
+  color:var(--primary);
+}
+
+.hero p{
+  max-width:900px;
+  margin:15px auto;
+  font-size:16px;
+}
+
+/* JOURNALS GRID */
+.journals{
+  width:100%;
+  padding:40px 30px;
+}
+
+.journals h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:var(--primary);
+  font-size:26px;
+}
+
+.journal-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+.journal{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,.1);
+  transition:transform .3s;
+}
+
+.journal:hover{
+  transform:translateY(-5px);
+}
+
+.journal img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.journal-content{
+  padding:18px;
+}
+
+.journal h3{
+  color:var(--primary);
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.journal p{
+  font-size:14px;
+  line-height:1.5;
+}
+
+.journal a{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  font-weight:bold;
+  color:var(--accent);
+}
+
+/* FOOTER */
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:18px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ethiopian Youth Physics Network</h1>
+  <p>Learning • Research • Olympiads</p>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="journal.html">Journals</a>
+  <a href="blog.html">Blogs</a>
+</nav>
+
+<section class="hero">
+  <h2>Physics Journals</h2>
+  <p>Explore high-quality physics journals curated for students and researchers. Click the links to read full articles or papers.</p>
+</section>
+
+<section class="journals">
+  <h2>Featured Journals</h2>
+
+  <div class="journal-grid">
+
+    <div class="journal">
+      
+      
+      <div class="journal-content">
+        <h3>Quantum Mechanics Journal</h3>
+        <p>Latest research and explanations about quantum theory and particle behavior.</p>
+        <a href="https://www.sciencedirect.com/journal/physics-reports" target="_blank">Read Journal →</a>
+      </div>
+    </div>
+
+    <div class="journal">
+      
+      <div class="journal-content">
+        <h3>Relativity Studies</h3>
+        <p>Papers discussing Einstein’s relativity theories and modern applications.</p>
+        <a href="https://journals.aps.org/prl/" target="_blank">Read Journal →</a>
+      </div>
+    </div>
+
+    <div class="journal">
+      
+      <div class="journal-content">
+        <h3>Astrophysics Journal</h3>
+        <p>Research papers covering black holes, galaxies, and cosmic phenomena.</p>
+        <a href="https://iopscience.iop.org/journal/0004-637X" target="_blank">Read Journal →</a>
+      </div>
+    </div>
+
+    <div class="journal">
+      
+      <div class="journal-content">
+        <h3>Particle Physics Journal</h3>
+        <p>Articles about particle collisions, LHC experiments, and discoveries.</p>
+        <a href="https://link.springer.com/journal/10751" target="_blank">Read Journal →</a>
+      </div>
+    </div>
+
+    <div class="journal">
+      
+      <div class="journal-content">
+        <h3>Electromagnetism Research</h3>
+        <p>Studies about electricity, magnetism, and field interactions.</p>
+        <a href="https://iopscience.iop.org/journal/1361-648X" target="_blank">Read Journal →</a>
+      </div>
+    </div>
+
+    <div class="journal">
+      
+      <div class="journal-content">
+        <h3>Optics & Light</h3>
+        <p>Papers on light behavior, refraction, reflection, and optics devices.</p>
+        <a href="https://www.osapublishing.org/ao/home.cfm" target="_blank">Read Journal →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Ethiopian Youth Physics Network</p>
+</footer>
+
+</body>
+</html>

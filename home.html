@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethiopian Youth Physics Network</title>
+
+<style>
+:root{
+  --primary:#1b5e20;
+  --accent:#f9a825;
+  --bg:#f2f4f7;
+  --dark:#263238;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--dark);
+}
+
+/* HEADER */
+header{
+  background:var(--primary);
+  color:white;
+  padding:35px 20px;
+  text-align:center;
+}
+
+header h1{
+  font-size:34px;
+}
+
+header p{
+  margin-top:8px;
+  opacity:0.9;
+}
+
+/* NAV */
+nav{
+  background:#ffffff;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+  color:var(--primary);
+  text-decoration:none;
+  padding:16px 22px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+/* HERO */
+.hero{
+  padding:70px 20px;
+  text-align:center;
+  background:linear-gradient(to right,#e8f5e9,#fff);
+}
+
+.hero h2{
+  font-size:30px;
+  color:var(--primary);
+}
+
+.hero p{
+  max-width:900px;
+  margin:18px auto;
+  font-size:18px;
+}
+
+/* POSTS */
+.posts{
+  width:100%;
+  padding:50px 30px;
+}
+
+.posts h2{
+  text-align:center;
+  margin-bottom:35px;
+  color:var(--primary);
+  font-size:28px;
+}
+
+.post-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.post{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 18px rgba(0,0,0,.1);
+  transition:transform .3s;
+}
+
+.post:hover{
+  transform:translateY(-5px);
+}
+
+.post img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+}
+
+.post-content{
+  padding:22px;
+}
+
+.post h3{
+  color:var(--primary);
+  font-size:19px;
+  margin-bottom:10px;
+}
+
+.post p{
+  font-size:14.5px;
+  line-height:1.6;
+}
+
+.post a{
+  display:inline-block;
+  margin-top:14px;
+  text-decoration:none;
+  font-weight:bold;
+  color:var(--accent);
+}
+
+/* FOOTER */
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:18px;
+  margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ethiopian Youth Physics Network</h1>
+  <p>Learning • Research • Olympiads</p>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="journal.html">Journals</a>
+  <a href="blog.html">Blogs</a>
+  
+</nav>
+
+<section class="hero">
+  <h2>Curated Physics Knowledge</h2>
+  <p>
+    A collection of high-quality physics articles and learning resources
+    selected for Ethiopian students and young researchers.
+  </p>
+</section>
+
+<section class="posts">
+  <h2>Featured Physics Posts</h2>
+
+  <div class="post-grid">
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgT1pJYlAbiIdcmaJUwfVQeoF4TSTAkOw9nCT66O_MQ&s=10">
+      <div class="post-content">
+        <h3>Introduction to Quantum Mechanics</h3>
+        <p>An accessible guide to the basics of quantum mechanics and particle-wave duality.</p>
+        <a href="https://www.khanacademy.org/science/physics/quantum-physics" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuTY1aPEVYU34TgZFIx6f8yOdU5f2MjbryeGKjy7xTg&s=10">
+      <div class="post-content">
+        <h3>Einstein’s Theory of Relativity</h3>
+        <p>Learn how relativity describes space and time in modern physics.</p>
+        <a href="https://www.space.com/17661-theory-general-relativity.html" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-KqXGajsdznrhYenzJHnyvqni9i0Ya_D4_zCygeYcw&s=10">
+      <div class="post-content">
+        <h3>Black Holes Explained</h3>
+        <p>Explore event horizons, singularities, and extreme gravity.</p>
+        <a href="https://science.nasa.gov/astrophysics/focus-areas/black-holes/" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZ4bFk9UM32-vCUt7I-rvyzHwsioh-NouFdDsbYsSfw&s=10">
+      <div class="post-content">
+        <h3>Particle Physics & CERN</h3>
+        <p>An introduction to the world of particles and accelerators.</p>
+        <a href="https://home.cern/science/physics" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlf8AczJP1mebZtaRV_XGGIC7AJJUOQnecJrv8OM3QiA&s=10">
+      <div class="post-content">
+        <h3>Waves and Oscillations</h3>
+        <p>Understand wave motion, frequency, and amplitude.</p>
+        <a href="https://www.khanacademy.org/science/physics/mechanical-waves-and-sound" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURieMJVuR0wKhqd45ar4JYFZbnNXCVQxpv2nNYQ3skQ&s=10">
+      <div class="post-content">
+        <h3>Electricity & Magnetism</h3>
+        <p>Explore electric fields, magnetic forces, and circuits.</p>
+        <a href="https://www.physicsclassroom.com/class/estatics" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxpa6PRhqFIypDTSuZSJt0qFpdMUqcsnuBpMgi3_LEw&s=10">
+      <div class="post-content">
+        <h3>Thermodynamics Basics</h3>
+        <p>Learn about energy, entropy, and the laws of thermodynamics.</p>
+        <a href="https://www.britannica.com/science/thermodynamics" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnU_3OHeabwkb3X_XE02Twt6WGqnqupsD7L_5kP-Lhg&s=10">
+      <div class="post-content">
+        <h3>Optics & Light</h3>
+        <p>Reflection, refraction, and the behavior of light waves.</p>
+        <a href="https://www.khanacademy.org/science/physics/geometric-optics" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq03NpJGIIixz1rjPE06HPYRltQCRex5QrB1Qyrvr3yg&s=10">
+      <div class="post-content">
+        <h3>Nuclear Physics Overview</h3>
+        <p>Atomic nuclei, fission, and nuclear reactions.</p>
+        <a href="https://www.world-nuclear.org/information-library.aspx" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7iDM5E3XnAe73KIkdfgHGw_M1o7wBaUVwwDJUZV-dfQ&s=10">
+      <div class="post-content">
+        <h3>Physics Olympiad Preparation</h3>
+        <p>Official resources and past problems for physics olympiads.</p>
+        <a href="https://www.ipho-new.org/resources/" target="_blank">Read Source →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Ethiopian Youth Physics Network</p>
+</footer>
+
+</body>
+</html>

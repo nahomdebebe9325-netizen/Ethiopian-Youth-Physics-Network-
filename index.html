@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethiopian Youth Physics Network</title>
+
+<style>
+:root{
+  --primary:#1b5e20;
+  --bg-gradient: linear-gradient(135deg, #a8e063, #56ab2f);
+  --text-color: #fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background: var(--bg-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  animation: backgroundShift 8s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% {background-position: 0 0;}
+  100% {background-position: 100% 100%;}
+}
+
+h1{
+  color: var(--text-color);
+  font-size: 36px;
+  margin-bottom: 15px;
+  animation: fadeIn 2s ease 0.5s forwards;
+  opacity: 0;
+}
+
+h2{
+  color: #ffd700;
+  font-size: 32px;
+  margin-bottom: 15px;
+  animation: fadeIn 2s ease 1s forwards;
+  opacity: 0;
+}
+
+p{
+  color: var(--text-color);
+  font-size: 20px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 2s ease 1.5s forwards;
+}
+
+.logo{
+  width: 120px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease 0s forwards;
+  opacity: 0;
+  border-radius: 10px; /* optional, for rounded corners */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+<script>
+setTimeout(function(){
+  window.location.href = "home.html";
+}, 4000); // Redirect after 4 seconds
+</script>
+
+</head>
+<body>
+
+<!-- Logo -->
+<img src="logo.jpg" alt="EYPN Logo" class="logo">
+
+<h1>Ethiopian Youth Physics Network</h1>
+<h2>WELCOME TO ETHIOPIAN YOUTH PHYSICS NETWORK</h2>
+<p>Learning • Research • Olympiads</p>
+
+</body>
+</html>

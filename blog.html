@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogs - Ethiopian Youth Physics Network</title>
+
+<style>
+:root{
+  --primary:#1b5e20;
+  --accent:#f9a825;
+  --bg:#f2f4f7;
+  --dark:#263238;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--dark);
+}
+
+/* HEADER */
+header{
+  background:var(--primary);
+  color:white;
+  padding:35px 20px;
+  text-align:center;
+}
+
+header h1{
+  font-size:32px;
+}
+
+header p{
+  margin-top:8px;
+  opacity:0.9;
+}
+
+/* NAV */
+nav{
+  background:#ffffff;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+  color:var(--primary);
+  text-decoration:none;
+  padding:16px 22px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+/* HERO */
+.hero{
+  padding:50px 20px;
+  text-align:center;
+  background:linear-gradient(to right,#e8f5e9,#fff);
+}
+
+.hero h2{
+  font-size:28px;
+  color:var(--primary);
+}
+
+.hero p{
+  max-width:900px;
+  margin:15px auto;
+  font-size:16px;
+}
+
+/* BLOG POSTS GRID */
+.blogs{
+  width:100%;
+  padding:40px 30px;
+}
+
+.blogs h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:var(--primary);
+  font-size:26px;
+}
+
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:25px;
+}
+
+.blog{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,.1);
+  transition:transform .3s;
+}
+
+.blog:hover{
+  transform:translateY(-5px);
+}
+
+.blog img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.blog-content{
+  padding:18px;
+}
+
+.blog h3{
+  color:var(--primary);
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.blog p{
+  font-size:15px;
+  line-height:1.8;
+  margin-bottom:12px;
+}
+
+.blog a{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  font-weight:bold;
+  color:var(--accent);
+}
+
+/* FOOTER */
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:18px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ethiopian Youth Physics Network</h1>
+  <p>Learning • Research • Olympiads</p>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="journal.html">Journals</a>
+  <a href="blog.html">Blogs</a>
+</nav>
+
+<section class="hero">
+  <h2>Physics Blogs</h2>
+  <p>Read detailed articles and blog posts on physics concepts, experiments, and educational tips curated for students and young researchers.</p>
+</section>
+
+<section class="blogs">
+  <h2>Latest Blog Posts</h2>
+
+  <div class="blog-grid">
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgT1pJYlAbiIdcmaJUwfVQeoF4TSTAkOw9nCT66O_MQ&s=10" alt="Quantum Mechanics Blog">
+      <div class="blog-content">
+        <h3>Understanding Quantum Mechanics</h3>
+        <p>Quantum mechanics is a fundamental branch of physics that explores the behavior of matter and energy at the smallest scales. In this blog, we dive deep into concepts like wave-particle duality, quantum superposition, and uncertainty principle. Students will learn how these phenomena defy classical physics intuition and shape modern technologies like quantum computing, semiconductors, and lasers.</p>
+        <a href="https://www.khanacademy.org/science/physics/quantum-physics" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Relativity Blog">
+      <div class="blog-content">
+        <h3>Einstein's Relativity Explained</h3>
+        <p>This blog covers both special and general relativity. Learn how Einstein revolutionized physics by showing that time and space are relative and interconnected. We also explore real-world applications such as GPS satellite corrections, gravitational lensing, and black hole physics. This post provides clear explanations suitable for students at different levels.</p>
+        <a href="https://www.space.com/17661-theory-general-relativity.html" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-KqXGajsdznrhYenzJHnyvqni9i0Ya_D4_zCygeYcw&s=10" alt="Black Holes Blog">
+      <div class="blog-content">
+        <h3>The Mysteries of Black Holes</h3>
+        <p>Black holes are regions of spacetime with gravity so strong that nothing can escape, not even light. This blog explains how black holes form, the concept of event horizons, and the latest discoveries including the first real black hole image. We also discuss how studying black holes helps us understand gravity, quantum mechanics, and the evolution of galaxies.</p>
+        <a href="https://science.nasa.gov/astrophysics/focus-areas/black-holes/" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZ4bFk9UM32-vCUt7I-rvyzHwsioh-NouFdDsbYsSfw&s=10" alt="Particle Physics Blog">
+      <div class="blog-content">
+        <h3>Particle Physics Discoveries</h3>
+        <p>Particle physics investigates the smallest building blocks of matter and the forces that govern them. This post covers the Large Hadron Collider (LHC) experiments, discovery of the Higgs boson, and other particle interactions. It also explains how these findings help us understand the universe at the fundamental level and inspire new technologies in medicine and energy.</p>
+        <a href="https://home.cern/science/physics" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlf8AczJP1mebZtaRV_XGGIC7AJJUOQnecJrv8OM3QiA&s=10" alt="Waves Blog">
+      <div class="blog-content">
+        <h3>Waves and Oscillations</h3>
+        <p>Waves and oscillations form the foundation of many physics phenomena, from sound and light to quantum mechanics. In this blog, we explain transverse and longitudinal waves, frequency, amplitude, and energy transfer. The post includes diagrams and examples that show how waves interact with materials, reflect, refract, and interfere, helping students visualize wave behavior.</p>
+        <a href="https://www.khanacademy.org/science/physics/mechanical-waves-and-sound" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURieMJVuR0wKhqd45ar4JYFZbnNXCVQxpv2nNYQ3skQ&s=10" alt="Electricity Blog">
+      <div class="blog-content">
+        <h3>Electricity & Magnetism Insights</h3>
+        <p>Explore the fascinating world of electromagnetism, including electric fields, magnetic forces, and their interactions. This blog explains circuit behavior, Faraday’s law, and real-world applications like motors and generators. It is designed for students to understand the principles of electricity and magnetism in a clear, visual, and practical way.</p>
+        <a href="https://www.physicsclassroom.com/class/estatics" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxpa6PRhqFIypDTSuZSJt0qFpdMUqcsnuBpMgi3_LEw&s=10" alt="Thermodynamics Blog">
+      <div class="blog-content">
+        <h3>Thermodynamics in Daily Life</h3>
+        <p>This blog explores the laws of thermodynamics, energy transfer, and entropy. Students will learn how thermodynamics governs heat engines, refrigerators, and biological systems. The post includes examples from daily life and experiments to show how energy conservation and efficiency principles are applied practically.</p>
+        <a href="https://www.britannica.com/science/thermodynamics" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnU_3OHeabwkb3X_XE02Twt6WGqnqupsD7L_5kP-Lhg&s=10" alt="Optics Blog">
+      <div class="blog-content">
+        <h3>Light & Optics Experiments</h3>
+        <p>Optics is the study of light behavior including reflection, refraction, diffraction, and interference. This blog post demonstrates simple experiments and examples to help students understand the principles of optics, lenses, mirrors, and how light forms images. Real-life applications in instruments, cameras, and telescopes are also explained.</p>
+        <a href="https://www.khanacademy.org/science/physics/geometric-optics" target="_blank">Read More →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Ethiopian Youth Physics Network</p>
+</footer>
+
+</body>
+</html>
